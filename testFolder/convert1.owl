@@ -1,20 +1,27 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.org/net/mobivoc/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace">
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://purl.org/net/mobivoc/">
     <Prefix name="" IRI="http://www.semanticweb.org/owl/owlapi/turtle#"/>
     <Prefix name="a" IRI="http://protege.stanford.edu/system#"/>
-    <Prefix name="g" IRI="http://ex.com/owl2/families#"/>
+    <Prefix name="e" IRI="http://example.org/ex#"/>
+    <Prefix name="g" IRI="http://www.example.org/grddl-primer#"/>
+    <Prefix name="n" IRI="http://www.owl-ontologies.com/clean-nomic.owl#"/>
     <Prefix name="s" IRI="http://schema.org/"/>
     <Prefix name="y" IRI="http://www.yovisto.com/resource/"/>
     <Prefix name="z" IRI="http://www.zotero.org/namespaces/export#"/>
+    <Prefix name="FO" IRI="http://www.sensocomune.org/ontologies/annotation/usageMark#FO+-+"/>
+    <Prefix name="ab" IRI="http://learningsparql.com/ns/addressbook#"/>
     <Prefix name="ai" IRI="http://vivoweb.org/ontology/activity-insight#"/>
+    <Prefix name="bo" IRI="http://www.mondeca.com/system/basicontology#"/>
     <Prefix name="cc" IRI="http://web.resource.org/cc/#"/>
+    <Prefix name="cp" IRI="http://standards.ieee.org/downloads/1484/1484.13.4/ramletCPMapping#"/>
     <Prefix name="cs" IRI="http://CloudServices.com/cs#"/>
-    <Prefix name="db" IRI="http://localhost:2020/"/>
+    <Prefix name="db" IRI="file:///home/Datanova/Documents/d2rqOutput/mysqlDump.nt"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="eg" IRI="urn:x-hp:eg/"/>
     <Prefix name="ex" IRI="http://www.lavbic.net/onto/sakila/"/>
@@ -22,49 +29,80 @@
     <Prefix name="gr" IRI="http://purl.org/goodrelations/v1#"/>
     <Prefix name="hr" IRI="http://vivo.cornell.edu/ns/hr/0.9/hr.owl#"/>
     <Prefix name="kb" IRI="http://protege.stanford.edu/kb#"/>
+    <Prefix name="lc" IRI="http://www.kirchnersoft.com/2006/LCData#"/>
     <Prefix name="mv" IRI="http://purl.org/net/mobivoc/"/>
     <Prefix name="my" IRI="http://oaei.ontologymatching.org/tests/205/onto.rdf#"/>
-    <Prefix name="ns" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <Prefix name="ns" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="om" IRI="http://www.wurvoc.org/vocabularies/om-1.8/"/>
     <Prefix name="p2" IRI="http://www.owl-ontologies.com/assert.owl#"/>
     <Prefix name="po" IRI="http://purl.org/ontology/po"/>
+    <Prefix name="qb" IRI="http://purl.org/linked-data/cube#"/>
     <Prefix name="rc" IRI="http://www.rightscom.com/2011/rc#"/>
     <Prefix name="rr" IRI="http://www.w3.org/ns/r2rml#"/>
+    <Prefix name="sd" IRI="http://www.w3.org/ns/sparql-service-description#"/>
     <Prefix name="sf" IRI="http://sourceforge.net/api/sfelements.rdf#"/>
     <Prefix name="tw" IRI="http://tw.rpi.edu/schema/"/>
     <Prefix name="vs" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
-    <Prefix name="xs" IRI="http://www.w3.org/2001/XMLSchema"/>
+    <Prefix name="xo" IRI="http://rhizomik.net/redefer/xsl/xsd2owl-functions.xsl"/>
+    <Prefix name="xs" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="DUL" IRI="http://www.loa-cnr.it/ontologies/DUL.owl#"/>
     <Prefix name="act" IRI="http://pervasive.semanticweb.org/ont/action#"/>
     <Prefix name="afn" IRI="http://jena.hpl.hp.com/ARQ/function#"/>
     <Prefix name="aka" IRI="http://vivoweb.org/ontology/aka#"/>
     <Prefix name="app" IRI="http://eagle-i.org/ont/app/1.0/"/>
+    <Prefix name="bfo" IRI="http://www.ifomis.org/bfo/1.0/snap#"/>
     <Prefix name="bio" IRI="http://purl.org/vocab/bio/0.1/"/>
     <Prefix name="c4o" IRI="http://purl.org/spar/c4o/"/>
     <Prefix name="cce" IRI="http://vivoweb.org/ontology/cornell-cooperative-extension#"/>
+    <Prefix name="cim" IRI="http://iec.ch/TC57/2013/CIM-schema-cim16#"/>
     <Prefix name="cmn" IRI="http://data.schemas.financial.thomsonreuters.com/Common/2009-09-01/"/>
-    <Prefix name="cyc" IRI="http://opencyc.sourceforge.net/daml/cyc.daml#"/>
+    <Prefix name="cpr" IRI="http://purl.org/cpr/0.5#"/>
+    <Prefix name="cyc" IRI="http://sw.cyc.com/"/>
+    <Prefix name="dbp" IRI="http://dbpedia.org/ontology/"/>
     <Prefix name="dbr" IRI="http://dbpedia.org/resource/"/>
     <Prefix name="dct" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="dcx" IRI="http://www.smaragd.dcx.com/Schemas/Smaragd"/>
+    <Prefix name="dol" IRI="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#"/>
     <Prefix name="dsd" IRI="http://people.lis.illinois.edu/~ddubin/resource/example/"/>
+    <Prefix name="dul" IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"/>
     <Prefix name="eco" IRI="http://www.emonitoring.org/emonitoring/0.2/nepal#"/>
     <Prefix name="env" IRI="http://www.ecomonitoring.org/ecomonitoring/environments#"/>
     <Prefix name="ero" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="fam" IRI="http://a.com/ontology#"/>
     <Prefix name="far" IRI="http://vitro.mannlib.cornell.edu/ns/reporting#"/>
     <Prefix name="fma" IRI="http://purl.obolibrary.org/obo/fma#"/>
-    <Prefix name="geo" IRI="http://uclab.konkuk.ac.kr/2012/03/geo#"/>
-    <Prefix name="j.0" IRI="http://www.owl-ontologies.com/turismo.owl#"/>
+    <Prefix name="foo" IRI="http://www.foo.org/"/>
+    <Prefix name="fro" IRI="http://www.xbrlsite.com/2015/fro/us-gaap/owl/FinancialReportOntology#"/>
+    <Prefix name="geo" IRI="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+    <Prefix name="inf" IRI="http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#"/>
+    <Prefix name="itm" IRI="http://www.mondeca.com/system/publishing#"/>
+    <Prefix name="j.0" IRI="http://sma/"/>
     <Prefix name="j.1" IRI="http://inspire.jrc.ec.europa.eu/schemas/ps/3.0/"/>
     <Prefix name="j.2" IRI="http://inspire.jrc.ec.europa.eu/schemas/base/3.2/"/>
     <Prefix name="j.3" IRI="http://www.opengis.net/ont/geosparql#"/>
     <Prefix name="lcc" IRI="http://www.rightscom.com/2011/lcc#"/>
+    <Prefix name="lds" IRI="http://stack.linkeddata.org/ldis-schema/"/>
     <Prefix name="lom" IRI="http://ltsc.ieee.org/xsd/LOM/"/>
-    <Prefix name="map" IRI="http://www.w3c.rl.ac.uk/2003/11/21-skos-mapping#"/>
-    <Prefix name="ns0" IRI="http://purl.org/vocab/vann/"/>
-    <Prefix name="ns1" IRI="http://example.com/nodetypes/2012/04/24/vehicle/"/>
-    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="map" IRI="file:///home/Datanova/Documents/d2rqOutput/mysqlMapping.ttl#"/>
+    <Prefix name="mdf" IRI="http://mdf/"/>
+    <Prefix name="mfg" IRI="http://www.workingontologist.org/Examples/Chapter3/Product.owl#"/>
+    <Prefix name="nao" IRI="http://www.semanticdesktop.org/ontologies/2007/08/15/nao#"/>
+    <Prefix name="nco" IRI="http://www.semanticdesktop.org/ontologies/2007/03/22/nco#"/>
+    <Prefix name="nfo" IRI="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#"/>
+    <Prefix name="nie" IRI="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#"/>
+    <Prefix name="nrl" IRI="http://www.semanticdesktop.org/ontologies/2007/08/15/nrl#"/>
+    <Prefix name="ns0" IRI="urn:hl7-org:"/>
+    <Prefix name="ns1" IRI="http://www.hds.utc.fr/swars/tbox#"/>
+    <Prefix name="ns2" IRI="http://www.hds.utc.fr/swars/tbox#"/>
+    <Prefix name="ns3" IRI="http://www.hds.utc.fr/swars/"/>
+    <Prefix name="ns5" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="ns6" IRI="http://purl.org/dc/terms#"/>
+    <Prefix name="ns7" IRI="http://www.hds.utc.fr/mc2/abox#"/>
+    <Prefix name="ns8" IRI="http://purl.org/ontology/bibo/"/>
+    <Prefix name="obi" IRI="http://obi.sourceforge.net/ontology/OBI.owl#"/>
+    <Prefix name="obo" IRI="http://www.geneontology.org/owl#"/>
     <Prefix name="ope" IRI="http://www.fitforall.gr/ope#"/>
+    <Prefix name="ore" IRI="http://www.openarchives.org/ore/terms/"/>
     <Prefix name="org" IRI="http://www.w3.org/ns/org/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="pol" IRI="http://www.rdfabout.com/rdf/schema/politico/"/>
@@ -84,26 +122,29 @@
     <Prefix name="sit" IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#"/>
     <Prefix name="spc" IRI="http://www.ecomonitoring.org/ecomonitoring/spiecies#"/>
     <Prefix name="src" IRI="http://data.ign.fr/id/codes/topo/typedesource/"/>
-    <Prefix name="ssn" IRI="http://purl.oclc.org/NET/ssnx/ssn#"/>
+    <Prefix name="ssn" IRI="http://purl.oclc.org/NET/ssnx/ssn"/>
     <Prefix name="tag" IRI="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"/>
     <Prefix name="tdf" IRI="http://data.ign.fr/id/codes/topo/typedefranchissement/"/>
     <Prefix name="tdl" IRI="http://data.ign.fr/id/codes/topo/typedelaisse/"/>
     <Prefix name="tds" IRI="http://data.ign.fr/id/codes/topo/typedeterraindesport/"/>
     <Prefix name="tet" IRI="file:/d2rq-0.8.1/a.ttl#"/>
+    <Prefix name="top" IRI="http://www.estrellaproject.org/lkif-core/lkif-top.owl#"/>
     <Prefix name="tpc" IRI="http://data.ign.fr/id/codes/topo/typedetransportcable/"/>
     <Prefix name="twi" IRI="http://tw.rpi.edu/instances/"/>
+    <Prefix name="uso" IRI="http://www.sensocomune.org/ontologies/annotation/usageMark#TS+-+di+uso+"/>
     <Prefix name="var" IRI="urn:swrl#"/>
     <Prefix name="veg" IRI="http://data.ign.fr/id/codes/topo/typedevegetation/"/>
     <Prefix name="vfr" IRI="http://data.ign.fr/id/codes/topo/typedevoieferree/"/>
     <Prefix name="vin" IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#"/>
     <Prefix name="vom" IRI="http://vocab.arvida.de/2014/03/vom/vocab#"/>
+    <Prefix name="web" IRI="http://metacognition.info/profile/webwho.xrdf#"/>
     <Prefix name="wgs" IRI="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
     <Prefix name="wos" IRI="http://vivo.mannlib.cornell.edu/ns/ThomsonWOS/0.1#"/>
     <Prefix name="wot" IRI="http://xmlns.com/wot/0.1/"/>
     <Prefix name="www" IRI="http://www.movieontology.org/2009/11/09/"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="xsi" IRI="http://www.w3.org/2001/XMLSchema-instance"/>
+    <Prefix name="xsi" IRI="http://www.w3.org/2001/XMLSchema-instance#"/>
     <Prefix name="xsl" IRI="http://www.w3.org/1999/XSL/Transform"/>
     <Prefix name="xsp" IRI="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"/>
     <Prefix name="zai" IRI="http://data.ign.fr/id/codes/topo/typedezai/"/>
@@ -111,40 +152,55 @@
     <Prefix name="adms" IRI="http://www.w3.org/ns/adms#"/>
     <Prefix name="aktp" IRI="http://www.aktors.org/ontology/portal#"/>
     <Prefix name="aseg" IRI="http://encs.concordia.ca/ontologies/2014/secont#"/>
+    <Prefix name="atom" IRI="http://standards.ieee.org/downloads/1484/1484.13.5/ramletAtomMapping#"/>
     <Prefix name="bati" IRI="http://data.ign.fr/id/codes/topo/typedebatiment/"/>
     <Prefix name="bibo" IRI="http://purl.org/ontology/bibo/"/>
     <Prefix name="char" IRI="http://www.ecomonitoring.org/ecomonitoring/Characteristics#"/>
+    <Prefix name="cims" IRI="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#"/>
     <Prefix name="cito" IRI="http://purl.org/spar/cito/"/>
     <Prefix name="core" IRI="http://www.bbc.co.uk/ontologies/coreconcepts/"/>
     <Prefix name="ctag" IRI="http://commontag.org/ns#"/>
+    <Prefix name="cvss" IRI="http://scap.nist.gov/schema/cvss-v2/0.2"/>
     <Prefix name="daml" IRI="http://www.daml.org/2001/03/daml+oil#"/>
     <Prefix name="dc11" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="dcam" IRI="http://purl.org/dc/dcam/"/>
     <Prefix name="doap" IRI="http://usefulinc.com/ns/doap#"/>
+    <Prefix name="doid" IRI="http://purl.obolibrary.org/obo/doid#"/>
     <Prefix name="earl" IRI="http://www.w3.org/ns/earl#"/>
+    <Prefix name="fibo" IRI="http://www.omg.org/spec/EDMC-FIBO/IND/InterestRates/InterestRates/"/>
     <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
-    <Prefix name="food" IRI="http://data.lirmm.fr/ontologies/food#"/>
+    <Prefix name="food" IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#"/>
     <Prefix name="gcis" IRI="http://data.globalchange.gov/gcis.owl#"/>
     <Prefix name="geom" IRI="http://data.ign.fr/def/geometrie#"/>
     <Prefix name="geon" IRI="http://sws.geonames.org/"/>
     <Prefix name="gfvo" IRI="http://www.biointerchange.org/gfvo#"/>
     <Prefix name="ical" IRI="http://www.w3.org/2002/12/cal/ical#"/>
     <Prefix name="igeo" IRI="http://rdf.insee.fr/def/geo#"/>
+    <Prefix name="inf_" IRI="http://www.loa-cnr.it/ontologies/InformationObjects.owl#"/>
     <Prefix name="iswc" IRI="http://annotation.semanticweb.org/iswc/iswc.daml#"/>
     <Prefix name="ldbc" IRI="http://www.ldbc.eu/"/>
     <Prefix name="mann" IRI="http://vivo.cornell.edu/ns/mannadditions/0.1#"/>
     <Prefix name="meta" IRI="http://www.ontologydesignpatterns.org/schemas/meta.owl#"/>
+    <Prefix name="mets" IRI="http://standards.ieee.org/downloads/1484/1484.13.2/ramletMETSMapping#"/>
+    <Prefix name="mico" IRI="http://www.mico-project.eu/ns/platform/1.0/schema#"/>
+    <Prefix name="mpeg" IRI="http://standards.ieee.org/downloads/1484/1484.13.3/ramletMPEG21DIDMapping#"/>
     <Prefix name="msg0" IRI="http://web.resource.org/cc/"/>
+    <Prefix name="norm" IRI="http://www.estrellaproject.org/lkif-core/norm.owl#"/>
+    <Prefix name="olia" IRI="http://purl.org/olia/olia.owl#"/>
     <Prefix name="onto" IRI="C:/d2rq-0.8.1/a.owl#"/>
     <Prefix name="ontx" IRI="http://www.ontologyx.com/terms/ontx#"/>
     <Prefix name="onyx" IRI="http://www.gsi.dit.upm.es/ontologies/onyx/ns#"/>
     <Prefix name="owl2" IRI="http://www.w3.org/2006/12/owl2#"/>
+    <Prefix name="paas" IRI="http://paasport-project.eu/ontology/paasport#"/>
     <Prefix name="page" IRI="http://dbpedia.org/page/"/>
     <Prefix name="part" IRI="http://www.ecomonitoring.org/ecomonitoring/speciesPart#"/>
     <Prefix name="prov" IRI="http://www.w3.org/ns/prov#"/>
-    <Prefix name="purl" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="purl" IRI="http://purl.org/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="rea_" IRI="http://www.ecimf.org/rea#"/>
     <Prefix name="rlog" IRI="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#"/>
+    <Prefix name="role" IRI="http://www.estrellaproject.org/lkif-core/role.owl#"/>
+    <Prefix name="sioc" IRI="http://rdfs.org/sioc/ns#"/>
     <Prefix name="skco" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="spin" IRI="http://spinrdf.org/spin#"/>
@@ -152,21 +208,24 @@
     <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
     <Prefix name="swvs" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
     <Prefix name="test" IRI="inn/"/>
-    <Prefix name="this" IRI="http://ontovibe.visualdataweb.org/1.0#"/>
+    <Prefix name="this" IRI="http://ontovibe.visualdataweb.org#"/>
     <Prefix name="time" IRI="http://www.w3.org/2006/time#"/>
     <Prefix name="topo" IRI="http://data.ign.fr/def/topo#"/>
+    <Prefix name="ucum" IRI="http://purl.oclc.org/NET/muo/ucum/"/>
     <Prefix name="usps" IRI="http://www.w3.org/2000/10/swap/pim/usps#"/>
     <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
     <Prefix name="var2" IRI="urn:http://www.w3.org/2003/11/swrl#"/>
     <Prefix name="vivo" IRI="http://vivoweb.org/ontology/core#"/>
     <Prefix name="voaf" IRI="http://purl.org/vocommons/voaf#"/>
     <Prefix name="void" IRI="http://rdfs.org/ns/void#"/>
+    <Prefix name="vuln" IRI="http://scap.nist.gov/schema/vulnerability/0.4"/>
     <Prefix name="wcmc" IRI="http://weill.cornell.edu/vivo/ontology/wcmc#"/>
     <Prefix name="wped" IRI="http://en.wikipedia.org/wiki/"/>
     <Prefix name="xref" IRI="http://id.crossref.org/contributor/"/>
     <Prefix name="acfoo" IRI="http://acme.example.com/foo"/>
     <Prefix name="admin" IRI="http://webns.net/mvcb/"/>
     <Prefix name="align" IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"/>
+    <Prefix name="assoc" IRI="http://ebiquity.umbc.edu/ontology/association.owl#"/>
     <Prefix name="being" IRI="http://purl.org/ontomedia/ext/common/being#"/>
     <Prefix name="bevon" IRI="http://rdfs.co/bevon/"/>
     <Prefix name="cflow" IRI="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#"/>
@@ -175,21 +234,33 @@
     <Prefix name="event" IRI="http://purl.org/NET/c4dm/event.owl#"/>
     <Prefix name="fabio" IRI="http://purl.org/spar/fabio/"/>
     <Prefix name="faldo" IRI="http://biohackathon.org/resource/faldo#"/>
+    <Prefix name="foaf2" IRI="http://javierdelacueva.es/foaf#"/>
+    <Prefix name="galen" IRI="http://www.co-ode.org/ontologies/galen#"/>
     <Prefix name="geosp" IRI="http://www.opengis.net/ont/geosparql/"/>
+    <Prefix name="grddl" IRI="http://www.w3.org/2003/g/data-view#"/>
     <Prefix name="local" IRI="http://vivo.cornell.edu/ontology/local#"/>
+    <Prefix name="lrole" IRI="http://www.estrellaproject.org/lkif-core/legal-role.owl#"/>
     <Prefix name="maths" IRI="http://vocab.arvida.de/2014/03/maths/vocab#"/>
+    <Prefix name="mereo" IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#"/>
     <Prefix name="mpeg7" IRI="http://rhizomik.net/ontologies/2005/03/Mpeg7-2001.owl#"/>
     <Prefix name="myext" IRI="http://example.com/my-extensions"/>
+    <Prefix name="oboRO" IRI="http://obofoundry.org/ro/ro.owl#"/>
     <Prefix name="ocrer" IRI="http://purl.org/net/OCRe/research.owl#"/>
     <Prefix name="ospcu" IRI="http://vivoweb.org/ontology/cu-vivo-osp#"/>
-    <Prefix name="other" IRI="http://ontovibe.visualdataweb.org/1.0/imported#"/>
+    <Prefix name="other" IRI="http://ontovibe.visualdataweb.org/imported#"/>
+    <Prefix name="owl11" IRI="http://www.w3.org/2006/12/owl11#"/>
     <Prefix name="paper" IRI="http://www.icecoolfire.com#"/>
     <Prefix name="pizza" IRI="http://www.co-ode.org/ontologies/pizza/pizza.owl#"/>
+    <Prefix name="place" IRI="http://www.estrellaproject.org/lkif-core/relative-places.owl#"/>
+    <Prefix name="plant" IRI="http://fake/plant#"/>
     <Prefix name="polbr" IRI="http://ligadonospoliticos.com.br/politicobr/"/>
     <Prefix name="prism" IRI="http://prismstandard.org/namespaces/1.2/basic/"/>
     <Prefix name="rcavs" IRI="http://www.rightscom.com/2011/rcavs#"/>
+    <Prefix name="rules" IRI="http://www.estrellaproject.org/lkif-core/lkif-rules.owl#"/>
+    <Prefix name="saref" IRI="http://ontology.tno.nl/saref.ttl#"/>
     <Prefix name="sbmed" IRI="http://vivo.stonybrookmedicine.edu/ontology/core#"/>
     <Prefix name="scirr" IRI="http://vivoweb.org/ontology/scientific-research-resource#"/>
+    <Prefix name="scovo" IRI="http://purl.org/NET/scovo#"/>
     <Prefix name="skos2" IRI="http://www.w3.org/2008/05/skos#"/>
     <Prefix name="sqwrl" IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#"/>
     <Prefix name="stars" IRI="http://vitro.mannlib.cornell.edu/ns/cornell/stars/classes#"/>
@@ -198,6 +269,7 @@
     <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
     <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
     <Prefix name="swrlx" IRI="http://www.w3.org/2003/11/swrlx#"/>
+    <Prefix name="teach" IRI="http://linkedscience.org/teach/ns#"/>
     <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="tisit" IRI="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"/>
     <Prefix name="units" IRI="http://visus.mit.edu/fontomri/0.01/units.owl#"/>
@@ -205,8 +277,12 @@
     <Prefix name="vcard" IRI="http://www.w3.org/2001/vcard-rdf/3.0#"/>
     <Prefix name="vitro" IRI="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"/>
     <Prefix name="vivoc" IRI="http://vivo.library.cornell.edu/ns/0.1#"/>
-    <Prefix name="vocab" IRI="http://localhost:2020/vocab/"/>
+    <Prefix name="vocab" IRI="http://localhost:2020/vocab/resource/"/>
+    <Prefix name="xhtml" IRI="http://www.w3.org/1999/xhtml#"/>
+    <Prefix name="xlink" IRI="http://standards.ieee.org/downloads/1484/1484.13.1/ramletXlinkMapping#"/>
+    <Prefix name="LogiCO" IRI="http://ontology.tno.nl/logico#"/>
     <Prefix name="Sakila" IRI="http://www.lavbic.net/onto/sakila/"/>
+    <Prefix name="action" IRI="http://www.estrellaproject.org/lkif-core/action.owl#"/>
     <Prefix name="assert" IRI="http://ebiquity.umbc.edu/ontology/assertion.owl#"/>
     <Prefix name="biblio" IRI="http://purl.org/ontology/bibo/"/>
     <Prefix name="camera" IRI="http://www.xfront.com/owl/ontologies/camera/#"/>
@@ -214,13 +290,21 @@
     <Prefix name="config" IRI="http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#"/>
     <Prefix name="dcelem" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="dctype" IRI="http://purl.org/dc/dcmitype/"/>
+    <Prefix name="ebqids" IRI="http://ebiquity.umbc.edu/ontologies/cybersecurity/ids/v2.2/IDSOntology.owl/#"/>
+    <Prefix name="entsoe" IRI="http://entsoe.eu/CIM/SchemaExtension/3/1#"/>
     <Prefix name="geofla" IRI="http://data.ign.fr/def/geofla#"/>
+    <Prefix name="isocat" IRI="http://www.isocat.org/datcat/"/>
+    <Prefix name="kernel" IRI="http://www.mondeca.com/system/kernel#"/>
     <Prefix name="ocresd" IRI="http://purl.org/net/OCRe/study_design.owl#"/>
     <Prefix name="owlapi" IRI="http://www.semanticweb.org/owlapi#"/>
+    <Prefix name="people" IRI="http://semwebprogramming.net/people#"/>
     <Prefix name="person" IRI="http://ebiquity.umbc.edu/ontology/person.owl#"/>
     <Prefix name="planex" IRI="http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#"/>
+    <Prefix name="plants" IRI="http://www.linkeddatatools.com/plants#"/>
     <Prefix name="provdc" IRI="http://www.w3.org/ns/prov-dc#"/>
     <Prefix name="pubmed" IRI="http://vitro.mannlib.cornell.edu/ns/pubmed#"/>
+    <Prefix name="ramlet" IRI="http://standards.ieee.org/downloads/1484/1484.13.1/ramletCore#"/>
+    <Prefix name="rdf123" IRI="http://rdf123.umbc.edu/ns/"/>
     <Prefix name="rdfsyn" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="schema" IRI="http://schema.org/"/>
     <Prefix name="scires" IRI="http://vivoweb.org/ontology/scientific-research#"/>
@@ -229,41 +313,68 @@
     <Prefix name="status" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
     <Prefix name="taskex" IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#"/>
     <Prefix name="travel" IRI="http://www.co-ode.org/roberts/travel.owl#"/>
+    <Prefix name="acetext" IRI="http://attempto.ifi.uzh.ch/acetext#"/>
     <Prefix name="address" IRI="http://schemas.talis.com/2005/address/schema#"/>
+    <Prefix name="article" IRI="http://medialab-prado.es/article/"/>
+    <Prefix name="contact" IRI="http://ebiquity.umbc.edu/ontology/contact.owl#"/>
     <Prefix name="dbpedia" IRI="http://dbpedia.org/resource/"/>
     <Prefix name="dbpprop" IRI="http://dbpedia.org/property/"/>
     <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="degrees" IRI="http://purl.org/ontology/bibo/degrees/"/>
     <Prefix name="display" IRI="http://vitro.mannlib.cornell.edu/ontologies/display/1.1#"/>
     <Prefix name="famille" IRI="http://lacot.org/public/owl/famille#"/>
+    <Prefix name="history" IRI="http://inteligenciaaplicada.com.mx/semantics/history#"/>
     <Prefix name="knowrob" IRI="http://ias.cs.tum.edu/kb/knowrob.owl#"/>
+    <Prefix name="laction" IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#"/>
+    <Prefix name="ontolex" IRI="http://www.w3.org/ns/ontolex#"/>
+    <Prefix name="opencyc" IRI="http://sw.opencyc.org/"/>
     <Prefix name="owl2xml" IRI="http://www.w3.org/2006/12/owl2-xml#"/>
+    <Prefix name="process" IRI="http://www.estrellaproject.org/lkif-core/process.owl#"/>
     <Prefix name="project" IRI="http://ebiquity.umbc.edu/ontology/project.owl#"/>
     <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
     <Prefix name="spatial" IRI="http://vocab.arvida.de/2014/03/spatial/vocab#"/>
     <Prefix name="spinrdf" IRI="http://spinrdf.org/sp#"/>
     <Prefix name="timeint" IRI="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"/>
     <Prefix name="SkillMap" IRI="http://www.semanticweb.org/himali/ontologies/2014/10/SkillMap#"/>
+    <Prefix name="abstract" IRI="http://inteligenciaaplicada.com.mx/semantics/abstract#"/>
+    <Prefix name="by-nc-sa" IRI="http://creativecommons.org/licenses/by-nc-sa/3.0/"/>
+    <Prefix name="cycAnnot" IRI="http://sw.cyc.com/CycAnnotations_v1#"/>
     <Prefix name="dcmitype" IRI="http://purl.org/dc/dcmitype/"/>
+    <Prefix name="elements" IRI="http://plur.org/dc/elements/1.1/"/>
     <Prefix name="exergame" IRI="http://www.fitforall.gr/ontology/exergame#"/>
+    <Prefix name="lkif-top" IRI="http://www.estrellaproject.org/lkif-core/lkif-top.owl#"/>
     <Prefix name="oboInOwl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
+    <Prefix name="owl11xml" IRI="http://www.w3.org/2006/12/owl11-xml#"/>
     <Prefix name="owl_time" IRI="http://www.w3.org/2006/time#"/>
     <Prefix name="plandesc" IRI="http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#"/>
     <Prefix name="rdfmoney" IRI="http://www.purl.org/net/rdf-money/"/>
     <Prefix name="resource" IRI="http://dbpedia.org/resource/"/>
+    <Prefix name="skeleton" IRI="http://www.owl-ontologies.com/skeleton-lkif.owl#"/>
     <Prefix name="timeline" IRI="http://motools.sourceforge.net/timeline/timeline.html#"/>
+    <Prefix name="tmintDCS" IRI="http://t-mint.net/tmint/TMintDCS#"/>
+    <Prefix name="tminttop" IRI="http://t-mint.net/tmint/TopLevelCategoriesRelations#"/>
     <Prefix name="tutorial" IRI="http://acrab.ics.muni.cz/ontologies/tutorial.owl#"/>
+    <Prefix name="uomvocab" IRI="http://purl.oclc.org/NET/muo/muo#"/>
+    <Prefix name="relations" IRI="http://inteligenciaaplicada.com.mx/semantics/relations#"/>
+    <Prefix name="semiotics" IRI="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#"/>
+    <Prefix name="tmintCore" IRI="http://t-mint.net/tmint/TMintCore#"/>
+    <Prefix name="Annomation" IRI="http://www.annomation.acquiscent.com/ontologies/2015/0/Annomation.owl#"/>
     <Prefix name="computable" IRI="http://ias.cs.tum.edu/kb/computable.owl#"/>
+    <Prefix name="dictionary" IRI="http://www.sensocomune.org/ontologies/dictionary#"/>
     <Prefix name="dspace-ont" IRI="http://swig.hpclab.ceid.upatras.gr/dspace-ont/"/>
+    <Prefix name="expression" IRI="http://www.estrellaproject.org/lkif-core/expression.owl#"/>
     <Prefix name="geospecies" IRI="http://rdf.geospecies.org/ont/geospecies#"/>
     <Prefix name="literature" IRI="http://www.ida.liu.se/~almhe/SecurityLiterature.owl#"/>
     <Prefix name="statistics" IRI="http://purl.org/net/OCRe/statistics.owl#"/>
+    <Prefix name="ThalassaSea" IRI="http://www.semanticweb.org/ontologies/2010/3/hotel-15072010.owl#ThalassaSea&amp;"/>
     <Prefix name="ace_lexicon" IRI="http://attempto.ifi.uzh.ch/ace_lexicon#"/>
     <Prefix name="dbpedia-owl" IRI="http://dbpedia.org/ontology/"/>
     <Prefix name="photography" IRI="http://www.co-ode.org/ontologies/photography/photography.owl#"/>
+    <Prefix name="vocabulario" IRI="http://purl.org/derecho/vocabulario#"/>
     <Prefix name="geopolitical" IRI="http://aims.fao.org/aos/geopolitical.owl#"/>
     <Prefix name="investopedia" IRI="http://protege.stanford.edu/investopedia#"/>
     <Prefix name="iso11179-3e3" IRI="http://constellation.jhuapl.edu/iso11179-3e3.owl#"/>
+    <Prefix name="modification" IRI="http://www.estrellaproject.org/lkif-core/time-modification.owl#"/>
     <Prefix name="photography2" IRI="http://www.co-ode.org/ontologies/photography/photography.owl#120"/>
     <Prefix name="photography3" IRI="http://www.co-ode.org/ontologies/photography/photography.owl#135"/>
     <Prefix name="photography4" IRI="http://www.co-ode.org/ontologies/photography/photography.owl#4"/>
@@ -273,1382 +384,1404 @@
     <Prefix name="photography8" IRI="http://www.co-ode.org/ontologies/photography/photography.owl#18"/>
     <Prefix name="photography9" IRI="http://www.co-ode.org/ontologies/photography/photography.owl#80"/>
     <Prefix name="vitro-public" IRI="http://vitro.mannlib.cornell.edu/ns/vitro/public#"/>
+    <Prefix name="vocabulario2" IRI="file:/home/jdelacueva/proyectos/kelsen/trunk/rdf/vocabulario.n3#"/>
+    <Prefix name="vocabulario3" IRI="http://purl.org/derecho/vocabulario/20100612."/>
+    <Prefix name="fiboIndicator" IRI="http://www.omg.org/spec/EDMC-FIBO/IND/Indicators/Indicators/"/>
     <Prefix name="movieontology" IRI="http://www.movieontology.org/2009/10/01/movieontology.owl#"/>
+    <Prefix name="tmintMetadata" IRI="http://t-mint.net/tmint/TMintMetadata#"/>
     <Prefix name="OWLSchemaPisco" IRI="https://code.google.com/p/igc-pucp/source/browse/trunk/owl/OWLSchemaPisco.owl#"/>
     <Prefix name="family_example" IRI="https://wiki.csc.calpoly.edu/OntologyTutorial/family_example.owl#"/>
+    <Prefix name="hotel-15072010" IRI="http://www.semanticweb.org/ontologies/2010/3/hotel-15072010.owl#"/>
+    <Prefix name="medialab-prado" IRI="http://medialab-prado.es/"/>
     <Prefix name="movieontology2" IRI="http://www.movieontology.org/2009/11/09/movieontology.owl#"/>
     <Prefix name="study_protocol" IRI="http://purl.org/net/OCRe/study_protocol.owl#"/>
+    <Prefix name="tmintRelations" IRI="http://t-mint.net/tmint/TMintRelations#"/>
     <Prefix name="exergame-metric" IRI="http://www.fitforall.gr/ontology/exergame-metric#"/>
+    <Prefix name="hotel-150720102" IRI="http://www.semanticweb.org/ontologies/2010/3/hotel-15072010.owl#8"/>
+    <Prefix name="hotel-150720103" IRI="http://www.semanticweb.org/ontologies/2010/3/hotel-15072010.owl#4"/>
+    <Prefix name="hotel-150720104" IRI="http://www.semanticweb.org/ontologies/2010/3/hotel-15072010.owl#12"/>
+    <Prefix name="hotel-150720105" IRI="http://www.semanticweb.org/ontologies/2010/3/hotel-15072010.owl#6"/>
+    <Prefix name="hotel-150720106" IRI="http://www.semanticweb.org/ontologies/2010/3/hotel-15072010.owl#10"/>
+    <Prefix name="bali-exploration" IRI="bali-exploration.owl#"/>
     <Prefix name="exergame-exercise" IRI="http://www.fitforall.gr/ontology/exergame-exercise#"/>
     <Prefix name="exergame-sitetype" IRI="http://www.fitforall.gr/ontology/exergame-sitetype#"/>
+    <Prefix name="SensoComuneLexicon" IRI="http://www.sensocomune.org/ontologies/SensoComuneLexicon.owl#"/>
     <Prefix name="untitled-ontology-5" IRI="http://www.semanticweb.org/sa/ontologies/2014/11/untitled-ontology-5#"/>
     <Prefix name="untitled-ontology-8" IRI="http://www.semanticweb.org/sparsha/ontologies/2014/10/untitled-ontology-8#"/>
     <Prefix name="untitled-ontology-19" IRI="http://www.semanticweb.org/jkrammer/ontologies/2014/3/untitled-ontology-19#"/>
     <Prefix name="Ontology1363212625516" IRI="http://www.semanticweb.org/ontologies/2013/2/Ontology1363212625516.owl#"/>
+    <Prefix name="tmintTopLevelCategory" IRI="http://t-mint.net/tmint/TMintTopLevelCategories#"/>
+    <Prefix name="accommodation-04042012" IRI="http://www.semanticweb.org/ontologies/2010/3/accommodation-04042012.owl#"/>
+    <Prefix name="tmintSimpleDesignation" IRI="http://t-mint.net/tmint/TMintSimpleDesignation#"/>
     <Prefix name="exergame-gamecontroller" IRI="http://www.fitforall.gr/ontology/exergame-gamecontroller#"/>
     <Declaration>
-        <Class abbreviatedIRI="mv:AccessInformation"/>
+        <Class IRI="AccessInformation"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="mv:AccessType"/>
+        <Class IRI="AccessType"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="mv:BookingType"/>
+        <Class IRI="BookingType"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="mv:Charger"/>
+        <Class IRI="Charger"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="mv:ChargingPoint"/>
+        <Class IRI="ChargingPoint"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="mv:ChargingPointFees"/>
+        <Class IRI="ChargingPointFees"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="mv:ChargingPointLocation"/>
+        <Class IRI="ChargingPointLocation"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="mv:ChargingPointOwner"/>
+        <Class IRI="ChargingPointOwner"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="mv:ChargingSpeed"/>
+        <Class IRI="ChargingSpeed"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="mv:IdentificationSystem"/>
+        <Class IRI="IdentificationSystem"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="mv:Payment"/>
+        <Class IRI="Payment"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="mv:Plug"/>
+        <Class IRI="Plug"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="mv:PlugType"/>
+        <Class IRI="PlugType"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="mv:VehicleType"/>
+        <Class IRI="VehicleType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="mv:access"/>
+        <ObjectProperty IRI="access"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="mv:accessible"/>
+        <ObjectProperty IRI="accessible"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="mv:booking"/>
+        <ObjectProperty IRI="booking"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="mv:hasCharger"/>
+        <ObjectProperty IRI="hasCharger"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="mv:hasPlug"/>
+        <ObjectProperty IRI="hasPlug"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="mv:identification"/>
+        <ObjectProperty IRI="identification"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="mv:isLocated"/>
+        <ObjectProperty IRI="isLocated"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="mv:isOwnedBy"/>
+        <ObjectProperty IRI="isOwnedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="mv:payment"/>
+        <ObjectProperty IRI="payment"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="mv:picture"/>
+        <ObjectProperty IRI="picture"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="mv:vehicleType"/>
+        <ObjectProperty IRI="vehicleType"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:accessTimes"/>
+        <DataProperty IRI="accessTimes"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:additionalInformation"/>
+        <DataProperty IRI="additionalInformation"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:availableFromTime"/>
+        <DataProperty IRI="availableFromTime"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:brand"/>
+        <DataProperty IRI="brand"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:cableAvailable"/>
+        <DataProperty IRI="cableAvailable"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:chargingSpeed"/>
+        <DataProperty IRI="chargingSpeed"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:coveredLocation"/>
+        <DataProperty IRI="coveredLocation"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:currentType"/>
+        <DataProperty IRI="currentType"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:description"/>
+        <DataProperty IRI="description"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:energyType"/>
+        <DataProperty IRI="energyType"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:feesDescription"/>
+        <DataProperty IRI="feesDescription"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:intensity"/>
+        <DataProperty IRI="intensity"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:isPaidChargingPoint"/>
+        <DataProperty IRI="isPaidChargingPoint"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:lockerAvailable"/>
+        <DataProperty IRI="lockerAvailable"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:model"/>
+        <DataProperty IRI="model"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:numberOfParkingPlaces"/>
+        <DataProperty IRI="numberOfParkingPlaces"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:placeName"/>
+        <DataProperty IRI="placeName"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:placeType"/>
+        <DataProperty IRI="placeType"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:plugCondition"/>
+        <DataProperty IRI="plugCondition"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:plugInformation"/>
+        <DataProperty IRI="plugInformation"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:power"/>
+        <DataProperty IRI="power"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:status"/>
+        <DataProperty IRI="status"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:threePhasedCurrentavailable"/>
+        <DataProperty IRI="threePhasedCurrentavailable"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="mv:voltage"/>
+        <DataProperty IRI="voltage"/>
     </Declaration>
     <SubClassOf>
-        <Class abbreviatedIRI="mv:ChargingPointLocation"/>
+        <Class IRI="ChargingPointLocation"/>
         <Class abbreviatedIRI="schema:Place"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="mv:ChargingPointOwner"/>
+        <Class IRI="ChargingPointOwner"/>
         <Class abbreviatedIRI="foaf:Agent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="mv:Payment"/>
+        <Class IRI="Payment"/>
         <Class abbreviatedIRI="gr:PaymentMethod"/>
     </SubClassOf>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:IdentificationSystem"/>
-        <NamedIndividual abbreviatedIRI="mv:AccessCode"/>
+        <Class IRI="IdentificationSystem"/>
+        <NamedIndividual IRI="AccessCode"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:ChargingSpeed"/>
-        <NamedIndividual abbreviatedIRI="mv:Acelerated"/>
+        <Class IRI="ChargingSpeed"/>
+        <NamedIndividual IRI="Acelerated"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:IdentificationSystem"/>
-        <NamedIndividual abbreviatedIRI="mv:BadgeHasToBeOrdered"/>
+        <Class IRI="IdentificationSystem"/>
+        <NamedIndividual IRI="BadgeHasToBeOrdered"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:IdentificationSystem"/>
-        <NamedIndividual abbreviatedIRI="mv:BadgeIsAvailable"/>
+        <Class IRI="IdentificationSystem"/>
+        <NamedIndividual IRI="BadgeIsAvailable"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:AccessType"/>
-        <NamedIndividual abbreviatedIRI="mv:BrandsCustomers"/>
+        <Class IRI="AccessType"/>
+        <NamedIndividual IRI="BrandsCustomers"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:PlugType"/>
-        <NamedIndividual abbreviatedIRI="mv:CHAdeMOPlug"/>
+        <Class IRI="PlugType"/>
+        <NamedIndividual IRI="CHAdeMOPlug"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:PlugType"/>
-        <NamedIndividual abbreviatedIRI="mv:ComboPlug"/>
+        <Class IRI="PlugType"/>
+        <NamedIndividual IRI="ComboPlug"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:IdentificationSystem"/>
-        <NamedIndividual abbreviatedIRI="mv:CreditCard"/>
+        <Class IRI="IdentificationSystem"/>
+        <NamedIndividual IRI="CreditCard"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:AccessType"/>
-        <NamedIndividual abbreviatedIRI="mv:CustomerOfPremise"/>
+        <Class IRI="AccessType"/>
+        <NamedIndividual IRI="CustomerOfPremise"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:PlugType"/>
-        <NamedIndividual abbreviatedIRI="mv:EUDomesticPlug"/>
+        <Class IRI="PlugType"/>
+        <NamedIndividual IRI="EUDomesticPlug"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:AccessType"/>
-        <NamedIndividual abbreviatedIRI="mv:EmployeesOnly"/>
+        <Class IRI="AccessType"/>
+        <NamedIndividual IRI="EmployeesOnly"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:ChargingSpeed"/>
-        <NamedIndividual abbreviatedIRI="mv:Fast"/>
+        <Class IRI="ChargingSpeed"/>
+        <NamedIndividual IRI="Fast"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:AccessType"/>
-        <NamedIndividual abbreviatedIRI="mv:IdentifiedPerson"/>
+        <Class IRI="AccessType"/>
+        <NamedIndividual IRI="IdentifiedPerson"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:BookingType"/>
-        <NamedIndividual abbreviatedIRI="mv:Impossible"/>
+        <Class IRI="BookingType"/>
+        <NamedIndividual IRI="Impossible"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:AccessType"/>
-        <NamedIndividual abbreviatedIRI="mv:InhabitantsOnly"/>
+        <Class IRI="AccessType"/>
+        <NamedIndividual IRI="InhabitantsOnly"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:IdentificationSystem"/>
-        <NamedIndividual abbreviatedIRI="mv:Key"/>
+        <Class IRI="IdentificationSystem"/>
+        <NamedIndividual IRI="Key"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:BookingType"/>
-        <NamedIndividual abbreviatedIRI="mv:Mandatory"/>
+        <Class IRI="BookingType"/>
+        <NamedIndividual IRI="Mandatory"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:IdentificationSystem"/>
-        <NamedIndividual abbreviatedIRI="mv:MobileApplication"/>
+        <Class IRI="IdentificationSystem"/>
+        <NamedIndividual IRI="MobileApplication"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:IdentificationSystem"/>
-        <NamedIndividual abbreviatedIRI="mv:None"/>
+        <Class IRI="IdentificationSystem"/>
+        <NamedIndividual IRI="None"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:BookingType"/>
-        <NamedIndividual abbreviatedIRI="mv:Optional"/>
+        <Class IRI="BookingType"/>
+        <NamedIndividual IRI="Optional"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:IdentificationSystem"/>
-        <NamedIndividual abbreviatedIRI="mv:PhoneCall"/>
+        <Class IRI="IdentificationSystem"/>
+        <NamedIndividual IRI="PhoneCall"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:PlugType"/>
-        <NamedIndividual abbreviatedIRI="mv:SchukoPlug"/>
+        <Class IRI="PlugType"/>
+        <NamedIndividual IRI="SchukoPlug"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:ChargingSpeed"/>
-        <NamedIndividual abbreviatedIRI="mv:Standard"/>
+        <Class IRI="ChargingSpeed"/>
+        <NamedIndividual IRI="Standard"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:IdentificationSystem"/>
-        <NamedIndividual abbreviatedIRI="mv:TextMessage"/>
+        <Class IRI="IdentificationSystem"/>
+        <NamedIndividual IRI="TextMessage"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:PlugType"/>
-        <NamedIndividual abbreviatedIRI="mv:Type1Plug"/>
+        <Class IRI="PlugType"/>
+        <NamedIndividual IRI="Type1Plug"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:PlugType"/>
-        <NamedIndividual abbreviatedIRI="mv:Type2Plug"/>
+        <Class IRI="PlugType"/>
+        <NamedIndividual IRI="Type2Plug"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:PlugType"/>
-        <NamedIndividual abbreviatedIRI="mv:Type3Plug"/>
+        <Class IRI="PlugType"/>
+        <NamedIndividual IRI="Type3Plug"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:AccessType"/>
-        <NamedIndividual abbreviatedIRI="mv:Undefined"/>
+        <Class IRI="AccessType"/>
+        <NamedIndividual IRI="UndefinedAccessType"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:IdentificationSystem"/>
-        <NamedIndividual abbreviatedIRI="mv:Undefined"/>
+        <Class IRI="IdentificationSystem"/>
+        <NamedIndividual IRI="UndefinedIdentificationSystem"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="mv:PlugType"/>
-        <NamedIndividual abbreviatedIRI="mv:UnknownPlug"/>
+        <Class IRI="PlugType"/>
+        <NamedIndividual IRI="UnknownPlug"/>
     </ClassAssertion>
     <SameIndividual>
         <NamedIndividual abbreviatedIRI="resource:CHAdeMO"/>
-        <NamedIndividual abbreviatedIRI="mv:CHAdeMOPlug"/>
+        <NamedIndividual IRI="CHAdeMOPlug"/>
     </SameIndividual>
     <SameIndividual>
         <NamedIndividual abbreviatedIRI="resource:Europlug"/>
-        <NamedIndividual abbreviatedIRI="mv:EUDomesticPlug"/>
+        <NamedIndividual IRI="EUDomesticPlug"/>
     </SameIndividual>
     <SameIndividual>
         <NamedIndividual abbreviatedIRI="resource:SAE_J1772"/>
-        <NamedIndividual abbreviatedIRI="mv:Type1Plug"/>
+        <NamedIndividual IRI="Type1Plug"/>
     </SameIndividual>
     <SameIndividual>
         <NamedIndividual abbreviatedIRI="resource:Schuko"/>
-        <NamedIndividual abbreviatedIRI="mv:SchukoPlug"/>
+        <NamedIndividual IRI="SchukoPlug"/>
     </SameIndividual>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="mv:access"/>
-        <Class abbreviatedIRI="mv:AccessInformation"/>
+        <ObjectProperty IRI="access"/>
+        <Class IRI="AccessInformation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="mv:accessible"/>
-        <Class abbreviatedIRI="mv:ChargingPoint"/>
+        <ObjectProperty IRI="accessible"/>
+        <Class IRI="ChargingPoint"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="mv:booking"/>
-        <Class abbreviatedIRI="mv:AccessInformation"/>
+        <ObjectProperty IRI="booking"/>
+        <Class IRI="AccessInformation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="mv:hasCharger"/>
-        <Class abbreviatedIRI="mv:ChargingPoint"/>
+        <ObjectProperty IRI="hasCharger"/>
+        <Class IRI="ChargingPoint"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="mv:hasPlug"/>
-        <Class abbreviatedIRI="mv:ChargingPoint"/>
+        <ObjectProperty IRI="hasPlug"/>
+        <Class IRI="ChargingPoint"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="mv:identification"/>
-        <Class abbreviatedIRI="mv:AccessInformation"/>
+        <ObjectProperty IRI="identification"/>
+        <Class IRI="AccessInformation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="mv:isLocated"/>
-        <Class abbreviatedIRI="mv:ChargingPoint"/>
+        <ObjectProperty IRI="isLocated"/>
+        <Class IRI="ChargingPoint"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="mv:isOwnedBy"/>
-        <Class abbreviatedIRI="mv:ChargingPoint"/>
+        <ObjectProperty IRI="isOwnedBy"/>
+        <Class IRI="ChargingPoint"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="mv:payment"/>
-        <Class abbreviatedIRI="mv:ChargingPointFees"/>
+        <ObjectProperty IRI="payment"/>
+        <Class IRI="ChargingPointFees"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="mv:picture"/>
-        <Class abbreviatedIRI="mv:ChargingPoint"/>
+        <ObjectProperty IRI="picture"/>
+        <Class IRI="ChargingPoint"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="mv:vehicleType"/>
-        <Class abbreviatedIRI="mv:Plug"/>
+        <ObjectProperty IRI="vehicleType"/>
+        <Class IRI="Plug"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="mv:access"/>
-        <Class abbreviatedIRI="mv:AccessType"/>
+        <ObjectProperty IRI="access"/>
+        <Class IRI="AccessType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="mv:accessible"/>
-        <Class abbreviatedIRI="mv:AccessInformation"/>
+        <ObjectProperty IRI="accessible"/>
+        <Class IRI="AccessInformation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="mv:booking"/>
-        <Class abbreviatedIRI="mv:BookingType"/>
+        <ObjectProperty IRI="booking"/>
+        <Class IRI="BookingType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="mv:chargingSpeed"/>
-        <Class abbreviatedIRI="mv:ChargingSpeed"/>
+        <ObjectProperty IRI="chargingSpeed"/>
+        <Class IRI="ChargingSpeed"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="mv:hasCharger"/>
-        <Class abbreviatedIRI="mv:Charger"/>
+        <ObjectProperty IRI="hasCharger"/>
+        <Class IRI="Charger"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="mv:hasPlug"/>
-        <Class abbreviatedIRI="mv:Plug"/>
+        <ObjectProperty IRI="hasPlug"/>
+        <Class IRI="Plug"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="mv:identification"/>
-        <Class abbreviatedIRI="mv:IdentificationSystem"/>
+        <ObjectProperty IRI="identification"/>
+        <Class IRI="IdentificationSystem"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="mv:isLocated"/>
-        <Class abbreviatedIRI="mv:ChargingPointLocation"/>
+        <ObjectProperty IRI="isLocated"/>
+        <Class IRI="ChargingPointLocation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="mv:isOwnedBy"/>
-        <Class abbreviatedIRI="mv:ChargingPointOwner"/>
+        <ObjectProperty IRI="isOwnedBy"/>
+        <Class IRI="ChargingPointOwner"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="mv:payment"/>
-        <Class abbreviatedIRI="mv:Payment"/>
+        <ObjectProperty IRI="payment"/>
+        <Class IRI="Payment"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="mv:picture"/>
+        <ObjectProperty IRI="picture"/>
         <Class abbreviatedIRI="rdfs:Resource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="mv:vehicleType"/>
-        <Class abbreviatedIRI="mv:VehicleType"/>
+        <ObjectProperty IRI="vehicleType"/>
+        <Class IRI="VehicleType"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:accessTimes"/>
-        <Class abbreviatedIRI="mv:AccessInformation"/>
+        <DataProperty IRI="accessTimes"/>
+        <Class IRI="AccessInformation"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:additionalInformation"/>
-        <Class abbreviatedIRI="mv:ChargingPoint"/>
+        <DataProperty IRI="additionalInformation"/>
+        <Class IRI="ChargingPoint"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:availableFromTime"/>
-        <Class abbreviatedIRI="mv:AccessInformation"/>
+        <DataProperty IRI="availableFromTime"/>
+        <Class IRI="AccessInformation"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:brand"/>
-        <Class abbreviatedIRI="mv:Charger"/>
+        <DataProperty IRI="brand"/>
+        <Class IRI="Charger"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:cableAvailable"/>
-        <Class abbreviatedIRI="mv:Plug"/>
+        <DataProperty IRI="cableAvailable"/>
+        <Class IRI="Plug"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:chargingSpeed"/>
-        <Class abbreviatedIRI="mv:Plug"/>
+        <DataProperty IRI="chargingSpeed"/>
+        <Class IRI="Plug"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:coveredLocation"/>
-        <Class abbreviatedIRI="mv:AccessInformation"/>
+        <DataProperty IRI="coveredLocation"/>
+        <Class IRI="AccessInformation"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:currentType"/>
-        <Class abbreviatedIRI="mv:Plug"/>
+        <DataProperty IRI="currentType"/>
+        <Class IRI="Plug"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:description"/>
-        <Class abbreviatedIRI="mv:ChargingPoint"/>
+        <DataProperty IRI="description"/>
+        <Class IRI="ChargingPoint"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:energyType"/>
-        <Class abbreviatedIRI="mv:Charger"/>
+        <DataProperty IRI="energyType"/>
+        <Class IRI="Charger"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:feesDescription"/>
-        <Class abbreviatedIRI="mv:ChargingPointFees"/>
+        <DataProperty IRI="feesDescription"/>
+        <Class IRI="ChargingPointFees"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:intensity"/>
-        <Class abbreviatedIRI="mv:Plug"/>
+        <DataProperty IRI="intensity"/>
+        <Class IRI="Plug"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:isPaidChargingPoint"/>
-        <Class abbreviatedIRI="mv:ChargingPointFees"/>
+        <DataProperty IRI="isPaidChargingPoint"/>
+        <Class IRI="ChargingPointFees"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:lockerAvailable"/>
-        <Class abbreviatedIRI="mv:Plug"/>
+        <DataProperty IRI="lockerAvailable"/>
+        <Class IRI="Plug"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:model"/>
-        <Class abbreviatedIRI="mv:Charger"/>
+        <DataProperty IRI="model"/>
+        <Class IRI="Charger"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:numberOfParkingPlaces"/>
-        <Class abbreviatedIRI="mv:AccessInformation"/>
+        <DataProperty IRI="numberOfParkingPlaces"/>
+        <Class IRI="AccessInformation"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:placeName"/>
-        <Class abbreviatedIRI="mv:ChargingPoint"/>
+        <DataProperty IRI="placeName"/>
+        <Class IRI="ChargingPoint"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:placeType"/>
-        <Class abbreviatedIRI="mv:ChargingPoint"/>
+        <DataProperty IRI="placeType"/>
+        <Class IRI="ChargingPoint"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:plugCondition"/>
-        <Class abbreviatedIRI="mv:Plug"/>
+        <DataProperty IRI="plugCondition"/>
+        <Class IRI="Plug"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:plugInformation"/>
-        <Class abbreviatedIRI="mv:Plug"/>
+        <DataProperty IRI="plugInformation"/>
+        <Class IRI="Plug"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:power"/>
-        <Class abbreviatedIRI="mv:Plug"/>
+        <DataProperty IRI="power"/>
+        <Class IRI="Plug"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:status"/>
-        <Class abbreviatedIRI="mv:ChargingPoint"/>
+        <DataProperty IRI="status"/>
+        <Class IRI="ChargingPoint"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:threePhasedCurrentavailable"/>
-        <Class abbreviatedIRI="mv:Plug"/>
+        <DataProperty IRI="threePhasedCurrentavailable"/>
+        <Class IRI="Plug"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="mv:voltage"/>
-        <Class abbreviatedIRI="mv:Plug"/>
+        <DataProperty IRI="voltage"/>
+        <Class IRI="Plug"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:accessTimes"/>
+        <DataProperty IRI="accessTimes"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:additionalInformation"/>
+        <DataProperty IRI="additionalInformation"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:availableFromTime"/>
+        <DataProperty IRI="availableFromTime"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:brand"/>
+        <DataProperty IRI="brand"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:cableAvailable"/>
+        <DataProperty IRI="cableAvailable"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:coveredLocation"/>
+        <DataProperty IRI="coveredLocation"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:currentType"/>
+        <DataProperty IRI="currentType"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:description"/>
+        <DataProperty IRI="description"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:energyType"/>
+        <DataProperty IRI="energyType"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:feesDescription"/>
+        <DataProperty IRI="feesDescription"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:intensity"/>
+        <DataProperty IRI="intensity"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:isPaidChargingPoint"/>
+        <DataProperty IRI="isPaidChargingPoint"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:lockerAvailable"/>
+        <DataProperty IRI="lockerAvailable"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:model"/>
+        <DataProperty IRI="model"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:numberOfParkingPlaces"/>
+        <DataProperty IRI="numberOfParkingPlaces"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:placeName"/>
+        <DataProperty IRI="placeName"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:placeType"/>
+        <DataProperty IRI="placeType"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:plugCondition"/>
+        <DataProperty IRI="plugCondition"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:plugInformation"/>
+        <DataProperty IRI="plugInformation"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:power"/>
+        <DataProperty IRI="power"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:status"/>
+        <DataProperty IRI="status"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:threePhasedCurrentavailable"/>
+        <DataProperty IRI="threePhasedCurrentavailable"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty abbreviatedIRI="mv:voltage"/>
+        <DataProperty IRI="voltage"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:AccessCode</AbbreviatedIRI>
+        <IRI>AccessCode</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AccessCode</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:AccessCode</AbbreviatedIRI>
+        <IRI>AccessCode</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Zugangskode</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:AccessInformation</AbbreviatedIRI>
+        <IRI>AccessInformation</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Access information of the charging point.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:AccessInformation</AbbreviatedIRI>
+        <IRI>AccessInformation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Access Information</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:AccessInformation</AbbreviatedIRI>
+        <IRI>AccessInformation</IRI>
         <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Zugagsinformation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:AccessType</AbbreviatedIRI>
+        <IRI>AccessType</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes access type of the charging point.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:AccessType</AbbreviatedIRI>
+        <IRI>AccessType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Access Type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Acelerated</AbbreviatedIRI>
+        <IRI>Acelerated</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Acelerated</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:BadgeHasToBeOrdered</AbbreviatedIRI>
+        <IRI>BadgeHasToBeOrdered</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BadgeHasToBeOrdered</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:BadgeIsAvailable</AbbreviatedIRI>
+        <IRI>BadgeIsAvailable</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BadgeIsAvailable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:BookingType</AbbreviatedIRI>
+        <IRI>BookingType</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes booking type of the charging point.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:BookingType</AbbreviatedIRI>
+        <IRI>BookingType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Booking Type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:BrandsCustomers</AbbreviatedIRI>
+        <IRI>BrandsCustomers</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BrandsCustomers</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:CHAdeMOPlug</AbbreviatedIRI>
+        <IRI>CHAdeMOPlug</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CHAdeMO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:depiction"/>
-        <AbbreviatedIRI>mv:CHAdeMOPlug</AbbreviatedIRI>
+        <IRI>CHAdeMOPlug</IRI>
         <IRI>http://upload.wikimedia.org/wikipedia/commons/f/f3/VDE-AR-E_2623-2-2-plug.jpg</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:Charger</AbbreviatedIRI>
+        <IRI>Charger</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes characteristics of the charger.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Charger</AbbreviatedIRI>
+        <IRI>Charger</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Charger</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Charger</AbbreviatedIRI>
-        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ladergerät</Literal>
+        <IRI>Charger</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LadergerÃ¤t</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:ChargingPoint</AbbreviatedIRI>
+        <IRI>ChargingPoint</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Defines the public or semi-public charging points for electric vehicles available worldwide. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:ChargingPoint</AbbreviatedIRI>
+        <IRI>ChargingPoint</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Charging Point</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:ChargingPoint</AbbreviatedIRI>
+        <IRI>ChargingPoint</IRI>
         <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ladestation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:ChargingPoint</AbbreviatedIRI>
+        <IRI>ChargingPoint</IRI>
         <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Oplaadpunt</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:ChargingPoint</AbbreviatedIRI>
+        <IRI>ChargingPoint</IRI>
         <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Point de charge</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:ChargingPoint</AbbreviatedIRI>
+        <IRI>ChargingPoint</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ponto de Carregamento</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:ChargingPoint</AbbreviatedIRI>
+        <IRI>ChargingPoint</IRI>
         <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Punto de Recarga</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:ChargingPointFees</AbbreviatedIRI>
+        <IRI>ChargingPointFees</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Captures information about the charging point fees.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:ChargingPointFees</AbbreviatedIRI>
+        <IRI>ChargingPointFees</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Charging Point Fees</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:ChargingPointLocation</AbbreviatedIRI>
+        <IRI>ChargingPointLocation</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes the charging point location.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:ChargingPointLocation</AbbreviatedIRI>
+        <IRI>ChargingPointLocation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Charging Point Location</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:ChargingPointLocation</AbbreviatedIRI>
+        <IRI>ChargingPointLocation</IRI>
         <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lokalisierung der Ladestation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:ChargingPointOwner</AbbreviatedIRI>
+        <IRI>ChargingPointOwner</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Captures information about the owner of charging point.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:ChargingPointOwner</AbbreviatedIRI>
+        <IRI>ChargingPointOwner</IRI>
         <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Besitzer der Ladestation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:ChargingPointOwner</AbbreviatedIRI>
+        <IRI>ChargingPointOwner</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Charging Point Owner</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:ChargingSpeed</AbbreviatedIRI>
+        <IRI>ChargingSpeed</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes speed types available at the  types of vehicle the can be loaded by charging point.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:ChargingSpeed</AbbreviatedIRI>
+        <IRI>ChargingSpeed</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Charging Speed</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:ComboPlug</AbbreviatedIRI>
+        <IRI>ComboPlug</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Combo Plug</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:CreditCard</AbbreviatedIRI>
+        <IRI>CreditCard</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CreditCard</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:CreditCard</AbbreviatedIRI>
+        <IRI>CreditCard</IRI>
         <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Kreditkarte</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:CustomerOfPremise</AbbreviatedIRI>
+        <IRI>CustomerOfPremise</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CustomerOfPremise</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:EUDomesticPlug</AbbreviatedIRI>
+        <IRI>EUDomesticPlug</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EU Domestic Plug</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:EmployeesOnly</AbbreviatedIRI>
+        <IRI>EmployeesOnly</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EmployeesOnly</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:EmployeesOnly</AbbreviatedIRI>
+        <IRI>EmployeesOnly</IRI>
         <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nur Angestellte</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Fast</AbbreviatedIRI>
+        <IRI>Fast</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fast</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:IdentificationSystem</AbbreviatedIRI>
+        <IRI>IdentificationSystem</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes identification system of the charging point.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:IdentificationSystem</AbbreviatedIRI>
+        <IRI>IdentificationSystem</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identification System</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:IdentifiedPerson</AbbreviatedIRI>
+        <IRI>IdentifiedPerson</IRI>
         <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Autorisierte Person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:IdentifiedPerson</AbbreviatedIRI>
+        <IRI>IdentifiedPerson</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">IdentifiedPerson</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Impossible</AbbreviatedIRI>
+        <IRI>Impossible</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Impossible</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:InhabitantsOnly</AbbreviatedIRI>
+        <IRI>InhabitantsOnly</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">InhabitantsOnly</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:InhabitantsOnly</AbbreviatedIRI>
+        <IRI>InhabitantsOnly</IRI>
         <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nur Einwohner</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Key</AbbreviatedIRI>
+        <IRI>Key</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Key</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Key</AbbreviatedIRI>
-        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Schlüssel</Literal>
+        <IRI>Key</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SchlÃ¼ssel</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Mandatory</AbbreviatedIRI>
+        <IRI>Mandatory</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mandatory</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:MobileApplication</AbbreviatedIRI>
+        <IRI>MobileApplication</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MobileApplication</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:None</AbbreviatedIRI>
+        <IRI>None</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Keine</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:None</AbbreviatedIRI>
+        <IRI>None</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">None</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Optional</AbbreviatedIRI>
+        <IRI>Optional</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Optional</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:Payment</AbbreviatedIRI>
+        <IRI>Payment</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Defines  payment method.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Payment</AbbreviatedIRI>
+        <IRI>Payment</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Payment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Payment</AbbreviatedIRI>
+        <IRI>Payment</IRI>
         <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Zahlung</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:PhoneCall</AbbreviatedIRI>
+        <IRI>PhoneCall</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PhoneCall</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:Plug</AbbreviatedIRI>
+        <IRI>Plug</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes  plug characteristics.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Plug</AbbreviatedIRI>
+        <IRI>Plug</IRI>
         <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Anschluss</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Plug</AbbreviatedIRI>
+        <IRI>Plug</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Plug</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:PlugType</AbbreviatedIRI>
+        <IRI>PlugType</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes  type of available plug.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:PlugType</AbbreviatedIRI>
+        <IRI>PlugType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Plug Type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:PlugType</AbbreviatedIRI>
+        <IRI>PlugType</IRI>
         <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Steckertyp</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:SchukoPlug</AbbreviatedIRI>
+        <IRI>SchukoPlug</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Schuko Plug</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:depiction"/>
-        <AbbreviatedIRI>mv:SchukoPlug</AbbreviatedIRI>
+        <IRI>SchukoPlug</IRI>
         <IRI>http://upload.wikimedia.org/wikipedia/commons/e/ef/Schuko_plug_and_socket.png</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Standard</AbbreviatedIRI>
+        <IRI>Standard</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Standard</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:TextMessage</AbbreviatedIRI>
+        <IRI>TextMessage</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TextMessage</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Type1Plug</AbbreviatedIRI>
+        <IRI>Type1Plug</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type1 Plug</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
-        <AbbreviatedIRI>mv:Type1Plug</AbbreviatedIRI>
+        <IRI>Type1Plug</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SAE J1772</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:depiction"/>
-        <AbbreviatedIRI>mv:Type1Plug</AbbreviatedIRI>
+        <IRI>Type1Plug</IRI>
         <IRI>http://commons.wikimedia.org/wiki/Special:FilePath/SAE_J1772_7058855567.jpg</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Type2Plug</AbbreviatedIRI>
+        <IRI>Type2Plug</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type2 Plug</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="sameAs"/>
-        <AbbreviatedIRI>mv:Type2Plug</AbbreviatedIRI>
+        <AnnotationProperty abbreviatedIRI="owl:sameAs"/>
+        <IRI>Type2Plug</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://en.wikipedia.org/wiki/IEC_62196#Type_2:_VDE-AR-E_2623-2-2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
-        <AbbreviatedIRI>mv:Type2Plug</AbbreviatedIRI>
+        <IRI>Type2Plug</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EN 62196-2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:depiction"/>
-        <AbbreviatedIRI>mv:Type2Plug</AbbreviatedIRI>
+        <IRI>Type2Plug</IRI>
         <IRI>http://upload.wikimedia.org/wikipedia/commons/f/f3/VDE-AR-E_2623-2-2-plug.jpg</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Type3Plug</AbbreviatedIRI>
+        <IRI>Type3Plug</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type3 Plug</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
-        <AbbreviatedIRI>mv:Type3Plug</AbbreviatedIRI>
+        <IRI>Type3Plug</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EV Plug</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Undefined</AbbreviatedIRI>
-        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nicht bekannt</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Undefined</AbbreviatedIRI>
+        <IRI>UndefinedAccessType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Undefined</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:Undefined</AbbreviatedIRI>
+        <IRI>UndefinedAccessType</IRI>
         <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Undefiniert</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:UnknownPlug</AbbreviatedIRI>
+        <IRI>UndefinedIdentificationSystem</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nicht bekannt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>UndefinedIdentificationSystem</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Undefined</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>UnknownPlug</IRI>
         <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Unbekannter Anschluss</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:UnknownPlug</AbbreviatedIRI>
+        <IRI>UnknownPlug</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Unknown Plug</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:VehicleType</AbbreviatedIRI>
+        <IRI>VehicleType</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes  types of vehicle tht can be loaded by charging point.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:VehicleType</AbbreviatedIRI>
+        <IRI>VehicleType</IRI>
         <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fahrzeugstyp</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:VehicleType</AbbreviatedIRI>
+        <IRI>VehicleType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vehicle Type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:access</AbbreviatedIRI>
+        <IRI>access</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Access types of charging point. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:access</AbbreviatedIRI>
+        <IRI>access</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">access</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:accessTimes</AbbreviatedIRI>
+        <IRI>accessTimes</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Defines access time of the charging point. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:accessTimes</AbbreviatedIRI>
+        <IRI>accessTimes</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Access Time</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:accessible</AbbreviatedIRI>
+        <IRI>accessible</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Access information of the charging point.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:accessible</AbbreviatedIRI>
+        <IRI>accessible</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has charger</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:additionalInformation</AbbreviatedIRI>
+        <IRI>additionalInformation</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Other information about the charging point.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:additionalInformation</AbbreviatedIRI>
+        <IRI>additionalInformation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Additional Information</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:availableFromTime</AbbreviatedIRI>
+        <IRI>availableFromTime</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Intormation when the charging point will be available. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:availableFromTime</AbbreviatedIRI>
+        <IRI>availableFromTime</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">availableFromTime</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:booking</AbbreviatedIRI>
+        <IRI>booking</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Booking types for charging point. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:booking</AbbreviatedIRI>
+        <IRI>booking</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Booking</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:brand</AbbreviatedIRI>
+        <IRI>brand</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Defines the charger brand. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:brand</AbbreviatedIRI>
+        <IRI>brand</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Brand</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:cableAvailable</AbbreviatedIRI>
+        <IRI>cableAvailable</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates whether plug has a cable. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:cableAvailable</AbbreviatedIRI>
+        <IRI>cableAvailable</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cable available</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:chargingSpeed</AbbreviatedIRI>
+        <IRI>chargingSpeed</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Charging speed of plug. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:chargingSpeed</AbbreviatedIRI>
+        <IRI>chargingSpeed</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Charging Speed</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:coveredLocation</AbbreviatedIRI>
+        <IRI>coveredLocation</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates whether the location of the charging point is covered.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:coveredLocation</AbbreviatedIRI>
+        <IRI>coveredLocation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Covered Location</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:currentType</AbbreviatedIRI>
+        <IRI>currentType</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Current type.  </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:currentType</AbbreviatedIRI>
+        <IRI>currentType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CurrentType</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:description</AbbreviatedIRI>
+        <IRI>description</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description of charging point.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:description</AbbreviatedIRI>
+        <IRI>description</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:energyType</AbbreviatedIRI>
+        <IRI>energyType</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Energy type of the charging point. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:energyType</AbbreviatedIRI>
+        <IRI>energyType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">energy type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:feesDescription</AbbreviatedIRI>
+        <IRI>feesDescription</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Defines recharging fees.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:feesDescription</AbbreviatedIRI>
+        <IRI>feesDescription</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fees description</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:hasCharger</AbbreviatedIRI>
+        <IRI>hasCharger</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Charging point charger.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:hasCharger</AbbreviatedIRI>
+        <IRI>hasCharger</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has charger</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:hasPlug</AbbreviatedIRI>
+        <IRI>hasPlug</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Plugs available at the charging point.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:hasPlug</AbbreviatedIRI>
+        <IRI>hasPlug</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has plugs</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:identification</AbbreviatedIRI>
+        <IRI>identification</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identification system to assess charging point. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:identification</AbbreviatedIRI>
+        <IRI>identification</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">identification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:intensity</AbbreviatedIRI>
+        <IRI>intensity</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Plug intensity.  </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:intensity</AbbreviatedIRI>
+        <IRI>intensity</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Intensity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:isLocated</AbbreviatedIRI>
+        <IRI>isLocated</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Location of the charging point.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:isLocated</AbbreviatedIRI>
+        <IRI>isLocated</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">isLocated</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:isOwnedBy</AbbreviatedIRI>
+        <IRI>isOwnedBy</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Charging point&apos;s owner.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:isOwnedBy</AbbreviatedIRI>
+        <IRI>isOwnedBy</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">isOwnedBy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:isPaidChargingPoint</AbbreviatedIRI>
+        <IRI>isPaidChargingPoint</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicated whether it is paid charging point.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:isPaidChargingPoint</AbbreviatedIRI>
+        <IRI>isPaidChargingPoint</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Is paid charging point</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:lockerAvailable</AbbreviatedIRI>
+        <IRI>lockerAvailable</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates whether plug has a locker. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:lockerAvailable</AbbreviatedIRI>
+        <IRI>lockerAvailable</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Locker available</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:model</AbbreviatedIRI>
+        <IRI>model</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Charger model of the charging point. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:model</AbbreviatedIRI>
+        <IRI>model</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Model</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:numberOfParkingPlaces</AbbreviatedIRI>
+        <IRI>numberOfParkingPlaces</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number of parking places. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:numberOfParkingPlaces</AbbreviatedIRI>
+        <IRI>numberOfParkingPlaces</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">number of parking places</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:payment</AbbreviatedIRI>
+        <IRI>payment</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Available payment forms for recharging fees.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:payment</AbbreviatedIRI>
+        <IRI>payment</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Payment forms</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:picture</AbbreviatedIRI>
+        <IRI>picture</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Picture of charging point.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:picture</AbbreviatedIRI>
+        <IRI>picture</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">picture</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:placeName</AbbreviatedIRI>
+        <IRI>placeName</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Place name where charging point is located.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:placeName</AbbreviatedIRI>
+        <IRI>placeName</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">placeName</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:placeType</AbbreviatedIRI>
+        <IRI>placeType</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Place type where charging point is located, e.g. airport, restaurant.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:placeType</AbbreviatedIRI>
+        <IRI>placeType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">placeType</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:plugCondition</AbbreviatedIRI>
+        <IRI>plugCondition</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Plug condition. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:plugCondition</AbbreviatedIRI>
+        <IRI>plugCondition</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Plug Condition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:plugInformation</AbbreviatedIRI>
+        <IRI>plugInformation</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Captures information about plug. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:plugInformation</AbbreviatedIRI>
+        <IRI>plugInformation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Plug Information</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:power</AbbreviatedIRI>
+        <IRI>power</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Plug power. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:power</AbbreviatedIRI>
+        <IRI>power</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Power</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:status</AbbreviatedIRI>
+        <IRI>status</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Current status of the charging point, e.g. out-of-order or functional.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:status</AbbreviatedIRI>
+        <IRI>status</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">status</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:threePhasedCurrentavailable</AbbreviatedIRI>
+        <IRI>threePhasedCurrentavailable</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates whether Three-phased current is available.  </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:threePhasedCurrentavailable</AbbreviatedIRI>
+        <IRI>threePhasedCurrentavailable</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Three-phased current available</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:vehicleType</AbbreviatedIRI>
+        <IRI>vehicleType</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vehicle type. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:vehicleType</AbbreviatedIRI>
+        <IRI>vehicleType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">vehicle type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>mv:voltage</AbbreviatedIRI>
+        <IRI>voltage</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Plug voltage.  </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>mv:voltage</AbbreviatedIRI>
+        <IRI>voltage</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Voltage</Literal>
     </AnnotationAssertion>
 </Ontology>
@@ -1656,4 +1789,3 @@
 
 
 <!-- Generated by the OWL API (version 3.4.5-SNAPSHOT) http://owlapi.sourceforge.net -->
-
