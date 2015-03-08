@@ -1,4 +1,13 @@
 <?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdfsyn "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
 <rdfsyn:RDF xmlns="http://www.semanticweb.org/owl/owlapi/turtle#"
      xml:base="http://www.semanticweb.org/owl/owlapi/turtle"
      xmlns:itm="http://www.mondeca.com/system/publishing#"
@@ -811,7 +820,7 @@
     <!-- http://purl.org/net/mobivoc/Charger -->
 
     <owl:Class rdfsyn:about="http://purl.org/net/mobivoc/Charger">
-        <rdfs:label xml:lang="de">Ladergerät</rdfs:label>
+        <rdfs:label xml:lang="de">LadergerÃ¤t</rdfs:label>
         <rdfs:label xml:lang="en">Charger</rdfs:label>
         <rdfs:comment>Describes characteristics of the charger.</rdfs:comment>
     </owl:Class>
@@ -1128,7 +1137,7 @@
 
     <owl:NamedIndividual rdfsyn:about="http://purl.org/net/mobivoc/Key">
         <rdfsyn:type rdfsyn:resource="http://purl.org/net/mobivoc/IdentificationSystem"/>
-        <rdfs:label xml:lang="de">Schlüssel</rdfs:label>
+        <rdfs:label xml:lang="de">SchlÃ¼ssel</rdfs:label>
         <rdfs:label xml:lang="en">Key</rdfs:label>
     </owl:NamedIndividual>
     
