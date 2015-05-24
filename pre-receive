@@ -2,6 +2,8 @@
 ref=$1
 rev_old=$2
 rev_new=$3
-if [ "$ref" = refs/heads/master ]; then
+if [ "$ref" = "refs/heads/master" ]; then
     echo "ky eshte test"
 fi
+
+echo "fund"
