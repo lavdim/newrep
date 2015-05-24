@@ -49,7 +49,7 @@ check_banned_user() {
 }
 
 # Only allow commits from users with email addresses in specific domain
-check_authorized_email() {
+check_authorized_email() { 
     commit_email=$1
     commit_email_domain=`echo $commit_email | /usr/bin/tr '@' '\n' | /usr/bin/tail -n +2`
     email_approved=false
